@@ -1,7 +1,7 @@
 {
   "convention": "p_center = T_center_from_sensor @ [x_sensor, y_sensor, z_sensor, 1]; meters",
   "initial_file": "/home/sunny/sunny/redme.txt",
-  "initial_sha256": "cd74752bac6b13d459688aed69b462c734888879d0e773bfe456b865070ae494",
+  "initial_sha256": "010629e1a13543ad2a75ee9898974e21f53fc52c903b819077ad821f1dc43e4c",
   "initial": {
     "center": [
       [
@@ -221,7 +221,8 @@
     ],
     "iterations": 60,
     "trim": 0.85,
-    "workers": 2,
+    "workers": 1,
+    "method": "plane",
     "cross_side": false,
     "skip_validation": false
   },
@@ -5075,6 +5076,6 @@
       }
     }
   ],
-  "elapsed_seconds": 254.30156874656677,
+  "elapsed_seconds": 470.4560785293579,
   "limitation": "Geometric alignment estimate, not externally validated sensor accuracy. Assumes fixed mounts, meters, static scene, synchronized captures, and correct LEFT/RIGHT initial order."
 }

@@ -1,0 +1,721 @@
+{
+  "method": {
+    "transforms_evaluated": "initial redme.txt matrices and fixed calibration_precision T_center_from_sensor matrices",
+    "transform_convention": "p_center = T_center_from_sensor @ [x,y,z,1], coordinates in meters",
+    "reoptimized_on_validation_data": false,
+    "fixed_overlap_roi": "For each sensor/capture, points within 0.25m under the initial transform, with valid local surface geometry; masks reused for both transforms.",
+    "geometry": "2cm voxelized local geometry; bidirectional nearest-neighbor; RMSE distances clipped at 10cm.",
+    "summary_weighting": "Equal weight per capture and direction; per-capture rows average the two directions.",
+    "interpretation": "Surface overlap fit on these captures, not absolute extrinsic accuracy or independent ground truth."
+  },
+  "matrix_sources": {
+    "initial": {
+      "path": "/home/sunny/sunny/redme.txt",
+      "rule": "first eight numeric 4-value rows (left then right)"
+    },
+    "refined": {
+      "left": {
+        "path": "/home/sunny/sunny/calibration_precision/T_center_from_left.txt",
+        "sha256": "afef5c9f17dde4d2fc25d934ee31ba7ae045eb72fec295d63f58b4906837b6e8"
+      },
+      "right": {
+        "path": "/home/sunny/sunny/calibration_precision/T_center_from_right.txt",
+        "sha256": "7173a9a9d4343c29cf2de1a87b0c7d8ed546629a7dc0a2afee6ccf3d19dc70ff"
+      }
+    }
+  },
+  "initial_matrices": {
+    "left": [
+      [
+        0.5422088806722424,
+        -0.5269669810791947,
+        -0.6544580434011296,
+        2.616594
+      ],
+      [
+        0.6624941773492635,
+        0.7472052850212494,
+        -0.05277998687606241,
+        0.167073
+      ],
+      [
+        0.516827819199468,
+        -0.40495686546667387,
+        0.7542538978440413,
+        -0.089521
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "right": [
+      [
+        0.7101907240482804,
+        0.3931548361486006,
+        0.5840020635997313,
+        -2.61216
+      ],
+      [
+        -0.49947012625449894,
+        0.8659873215262203,
+        0.024403932780502346,
+        0.097551
+      ],
+      [
+        -0.4961438586288176,
+        -0.309023031130056,
+        0.8113852585400472,
+        -0.33497
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "refined_matrices": {
+    "left": [
+      [
+        0.564721885584861,
+        -0.5137096302155707,
+        -0.6459037140048522,
+        2.624736742074
+      ],
+      [
+        0.6516702020443279,
+        0.7577872424341675,
+        -0.03293088173020453,
+        0.165534938728
+      ],
+      [
+        0.5063745053900186,
+        -0.40231941418207096,
+        0.7627082989342725,
+        -0.075666104721
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "right": [
+      [
+        0.6271142650324473,
+        0.4390495115419879,
+        0.6433997396701032,
+        -2.623183686842
+      ],
+      [
+        -0.5571205193472617,
+        0.8301009527801892,
+        -0.02343363214828087,
+        0.04558818544
+      ],
+      [
+        -0.5443752616670349,
+        -0.3437556321111911,
+        0.7651716407949155,
+        -0.343024300035
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "inputs": {
+    "1-1": {
+      "left": {
+        "path": "/home/sunny/sunny/1-1/202_左.pcd",
+        "sha256": "4186339bf0d1493c7394a675e5af84e93e73bb4da6e6b6de89d20291ee1ee5b2"
+      },
+      "center": {
+        "path": "/home/sunny/sunny/1-1/204_中.pcd",
+        "sha256": "569668d9dda817999efe73ca8740115790ff71122f4b3ba9bf7950a399454c68"
+      },
+      "right": {
+        "path": "/home/sunny/sunny/1-1/200_右.pcd",
+        "sha256": "92ecb066b1f13c7282eb36f7d7b27ebd656040ed36200d6d059fa10bcab7bb27"
+      }
+    },
+    "1-2": {
+      "left": {
+        "path": "/home/sunny/sunny/1-2/left.pcd",
+        "sha256": "b0fe7d1f58b232c4672fd81dbe0e661299c42edc39fdf06b86b962847844a396"
+      },
+      "center": {
+        "path": "/home/sunny/sunny/1-2/center.pcd",
+        "sha256": "0b2e2948a0494defa2a7c7970912b1a914dde1d4c29d98fb236a5ae282bfdbe5"
+      },
+      "right": {
+        "path": "/home/sunny/sunny/1-2/right.pcd",
+        "sha256": "79d3b3fc51b3a6dbe2cb27970f1fd3db2ed8df0b47c330bc2ca472546285f188"
+      }
+    },
+    "1-3": {
+      "left": {
+        "path": "/home/sunny/sunny/1-3/202_左3.pcd",
+        "sha256": "c26c866257c5ed4c6415997fd95b48fca4bf9a6f22ca9747c8bed5dbc484df2c"
+      },
+      "center": {
+        "path": "/home/sunny/sunny/1-3/204_中3.pcd",
+        "sha256": "4b340927c6f7b79b32e15939140a6eef03f146be0c6e0d08daf0bc235cecb0ae"
+      },
+      "right": {
+        "path": "/home/sunny/sunny/1-3/200_右3.pcd",
+        "sha256": "4d8b9f860facf5f99ee7649c08fb73e6158a08c15d22b0cdb5d6e1a364a21201"
+      }
+    }
+  },
+  "captures": {
+    "1-1": {
+      "left": {
+        "nn_rmse_clipped_10cm_m": {
+          "initial": 0.04659945120370321,
+          "refined": 0.05213484529644674
+        },
+        "plane_rmse_clipped_10cm_m": {
+          "initial": 0.03247180714981602,
+          "refined": 0.03993981033401194
+        },
+        "nn_median_m": {
+          "initial": 0.023113956548090207,
+          "refined": 0.03376361584985188
+        },
+        "plane_median_m": {
+          "initial": 0.01343464322760178,
+          "refined": 0.0233786235422924
+        },
+        "within_2cm": {
+          "initial": 0.4248556466947494,
+          "refined": 0.278901419641303
+        },
+        "within_5cm": {
+          "initial": 0.771276568359686,
+          "refined": 0.6735946262273218
+        },
+        "within_10cm": {
+          "initial": 0.882929129720941,
+          "refined": 0.8784632433115048
+        },
+        "fixed_roi_points_by_direction": {
+          "sensor_to_center": 18959,
+          "center_to_sensor": 24834
+        }
+      },
+      "right": {
+        "nn_rmse_clipped_10cm_m": {
+          "initial": 0.04603530084710469,
+          "refined": 0.06476787038998938
+        },
+        "plane_rmse_clipped_10cm_m": {
+          "initial": 0.0328866722346699,
+          "refined": 0.05146423335295568
+        },
+        "nn_median_m": {
+          "initial": 0.02445827079737305,
+          "refined": 0.03995639273281355
+        },
+        "plane_median_m": {
+          "initial": 0.01322555972863485,
+          "refined": 0.023061353990133204
+        },
+        "within_2cm": {
+          "initial": 0.39653030536189826,
+          "refined": 0.2509115030970053
+        },
+        "within_5cm": {
+          "initial": 0.77504423104202,
+          "refined": 0.5510803297794123
+        },
+        "within_10cm": {
+          "initial": 0.895361951949462,
+          "refined": 0.698025050660043
+        },
+        "fixed_roi_points_by_direction": {
+          "sensor_to_center": 21159,
+          "center_to_sensor": 28306
+        }
+      }
+    },
+    "1-2": {
+      "left": {
+        "nn_rmse_clipped_10cm_m": {
+          "initial": 0.046103923470567645,
+          "refined": 0.05205681934350534
+        },
+        "plane_rmse_clipped_10cm_m": {
+          "initial": 0.03186579654212279,
+          "refined": 0.0400779369793922
+        },
+        "nn_median_m": {
+          "initial": 0.022003616327698993,
+          "refined": 0.031706684223241695
+        },
+        "plane_median_m": {
+          "initial": 0.012535736600961911,
+          "refined": 0.022742557212851906
+        },
+        "within_2cm": {
+          "initial": 0.4509005763688761,
+          "refined": 0.2797738994490314
+        },
+        "within_5cm": {
+          "initial": 0.7773783180535194,
+          "refined": 0.6859024706670387
+        },
+        "within_10cm": {
+          "initial": 0.8824939447187802,
+          "refined": 0.8685885094244258
+        },
+        "fixed_roi_points_by_direction": {
+          "sensor_to_center": 19432,
+          "center_to_sensor": 26395
+        }
+      },
+      "right": {
+        "nn_rmse_clipped_10cm_m": {
+          "initial": 0.0492909377988563,
+          "refined": 0.06677118181744637
+        },
+        "plane_rmse_clipped_10cm_m": {
+          "initial": 0.036852464393036466,
+          "refined": 0.05428499703100661
+        },
+        "nn_median_m": {
+          "initial": 0.027073070524367106,
+          "refined": 0.046972136244676596
+        },
+        "plane_median_m": {
+          "initial": 0.015128271755650076,
+          "refined": 0.02541956322091924
+        },
+        "within_2cm": {
+          "initial": 0.33216206056128406,
+          "refined": 0.22255219465251758
+        },
+        "within_5cm": {
+          "initial": 0.7416972970945244,
+          "refined": 0.5147907882162813
+        },
+        "within_10cm": {
+          "initial": 0.8731521250154929,
+          "refined": 0.6809135851879502
+        },
+        "fixed_roi_points_by_direction": {
+          "sensor_to_center": 20393,
+          "center_to_sensor": 28745
+        }
+      }
+    },
+    "1-3": {
+      "left": {
+        "nn_rmse_clipped_10cm_m": {
+          "initial": 0.04492056928165554,
+          "refined": 0.05131783818326213
+        },
+        "plane_rmse_clipped_10cm_m": {
+          "initial": 0.03263350441367116,
+          "refined": 0.040616682230084536
+        },
+        "nn_median_m": {
+          "initial": 0.022747543596317837,
+          "refined": 0.03418815102693285
+        },
+        "plane_median_m": {
+          "initial": 0.014370048113902342,
+          "refined": 0.026595204014511608
+        },
+        "within_2cm": {
+          "initial": 0.4242674949472351,
+          "refined": 0.2136430815575485
+        },
+        "within_5cm": {
+          "initial": 0.7930519269396261,
+          "refined": 0.7146567156527293
+        },
+        "within_10cm": {
+          "initial": 0.8916841717404089,
+          "refined": 0.877885863576467
+        },
+        "fixed_roi_points_by_direction": {
+          "sensor_to_center": 19537,
+          "center_to_sensor": 26771
+        }
+      },
+      "right": {
+        "nn_rmse_clipped_10cm_m": {
+          "initial": 0.04893728395442526,
+          "refined": 0.06686131569810826
+        },
+        "plane_rmse_clipped_10cm_m": {
+          "initial": 0.036820168940848,
+          "refined": 0.05410720064612047
+        },
+        "nn_median_m": {
+          "initial": 0.026529204115394896,
+          "refined": 0.04481504306659757
+        },
+        "plane_median_m": {
+          "initial": 0.014547968046660874,
+          "refined": 0.024698444110397552
+        },
+        "within_2cm": {
+          "initial": 0.3466447850366009,
+          "refined": 0.21959491669646436
+        },
+        "within_5cm": {
+          "initial": 0.7449334615717997,
+          "refined": 0.5219869843536777
+        },
+        "within_10cm": {
+          "initial": 0.8744140047448206,
+          "refined": 0.6739581892488834
+        },
+        "fixed_roi_points_by_direction": {
+          "sensor_to_center": 20073,
+          "center_to_sensor": 29479
+        }
+      }
+    }
+  },
+  "overall": {
+    "left": {
+      "score_nn_rmse_clipped_10cm_m_initial": 0.045874647985308804,
+      "score_nn_rmse_clipped_10cm_m_refined": 0.0518365009410714,
+      "initial_by_direction": [
+        {
+          "capture": "1-1",
+          "direction": "sensor_to_center",
+          "fixed_roi_points": 18959,
+          "nn_rmse_clipped_10cm_m": 0.04499576999753316,
+          "plane_rmse_clipped_10cm_m": 0.031645360512243516,
+          "plane_median_m": 0.013047890375636638,
+          "nn_median_m": 0.020780347784231927,
+          "within_2cm": 0.47586898043145737,
+          "within_5cm": 0.7883854633683212,
+          "within_10cm": 0.8890764280816499,
+          "all_points_within_5cm": 0.4348599793949611
+        },
+        {
+          "capture": "1-1",
+          "direction": "center_to_sensor",
+          "fixed_roi_points": 24834,
+          "nn_rmse_clipped_10cm_m": 0.04820313240987325,
+          "plane_rmse_clipped_10cm_m": 0.03329825378738852,
+          "plane_median_m": 0.013821396079566926,
+          "nn_median_m": 0.025447565311948486,
+          "within_2cm": 0.3738423129580414,
+          "within_5cm": 0.754167673351051,
+          "within_10cm": 0.8767818313602319,
+          "all_points_within_5cm": 0.5362688296639629
+        },
+        {
+          "capture": "1-2",
+          "direction": "sensor_to_center",
+          "fixed_roi_points": 19432,
+          "nn_rmse_clipped_10cm_m": 0.04369792987744935,
+          "plane_rmse_clipped_10cm_m": 0.029927131750965633,
+          "plane_median_m": 0.01191813514811537,
+          "nn_median_m": 0.019927146297618905,
+          "within_2cm": 0.5018011527377522,
+          "within_5cm": 0.8019246603540552,
+          "within_10cm": 0.8974372169617126,
+          "all_points_within_5cm": 0.4408132776208595
+        },
+        {
+          "capture": "1-2",
+          "direction": "center_to_sensor",
+          "fixed_roi_points": 26395,
+          "nn_rmse_clipped_10cm_m": 0.048509917063685945,
+          "plane_rmse_clipped_10cm_m": 0.033804461333279946,
+          "plane_median_m": 0.013153338053808453,
+          "nn_median_m": 0.02408008635777908,
+          "within_2cm": 0.4,
+          "within_5cm": 0.7528319757529836,
+          "within_10cm": 0.8675506724758477,
+          "all_points_within_5cm": 0.552677189009313
+        },
+        {
+          "capture": "1-3",
+          "direction": "sensor_to_center",
+          "fixed_roi_points": 19537,
+          "nn_rmse_clipped_10cm_m": 0.04301740027603167,
+          "plane_rmse_clipped_10cm_m": 0.0300376447737592,
+          "plane_median_m": 0.01381092084904762,
+          "nn_median_m": 0.020955722515098234,
+          "within_2cm": 0.4708501817065056,
+          "within_5cm": 0.8109740492399038,
+          "within_10cm": 0.9046936581870297,
+          "all_points_within_5cm": 0.4454630495790458
+        },
+        {
+          "capture": "1-3",
+          "direction": "center_to_sensor",
+          "fixed_roi_points": 26771,
+          "nn_rmse_clipped_10cm_m": 0.04682373828727941,
+          "plane_rmse_clipped_10cm_m": 0.03522936405358312,
+          "plane_median_m": 0.014929175378757067,
+          "nn_median_m": 0.02453936467753744,
+          "within_2cm": 0.37768480818796457,
+          "within_5cm": 0.7751298046393486,
+          "within_10cm": 0.878674685293788,
+          "all_points_within_5cm": 0.5710788841677443
+        }
+      ],
+      "refined_by_direction": [
+        {
+          "capture": "1-1",
+          "direction": "sensor_to_center",
+          "fixed_roi_points": 18959,
+          "nn_rmse_clipped_10cm_m": 0.04807781015865371,
+          "plane_rmse_clipped_10cm_m": 0.03585860450602585,
+          "plane_median_m": 0.019342044059118706,
+          "nn_median_m": 0.02781057425569838,
+          "within_2cm": 0.3250171422543383,
+          "within_5cm": 0.7389102800780631,
+          "within_10cm": 0.9028957223482251,
+          "all_points_within_5cm": 0.38870937529268523
+        },
+        {
+          "capture": "1-1",
+          "direction": "center_to_sensor",
+          "fixed_roi_points": 24834,
+          "nn_rmse_clipped_10cm_m": 0.056191880434239776,
+          "plane_rmse_clipped_10cm_m": 0.044021016161998036,
+          "plane_median_m": 0.027415203025466094,
+          "nn_median_m": 0.03971665744400538,
+          "within_2cm": 0.2327856970282677,
+          "within_5cm": 0.6082789723765805,
+          "within_10cm": 0.8540307642747845,
+          "all_points_within_5cm": 0.4263731170336037
+        },
+        {
+          "capture": "1-2",
+          "direction": "sensor_to_center",
+          "fixed_roi_points": 19432,
+          "nn_rmse_clipped_10cm_m": 0.0471206729518874,
+          "plane_rmse_clipped_10cm_m": 0.035116678757105925,
+          "plane_median_m": 0.01928520626860997,
+          "nn_median_m": 0.027028972914354056,
+          "within_2cm": 0.33136064223960476,
+          "within_5cm": 0.7518011527377522,
+          "within_10cm": 0.9069061342116097,
+          "all_points_within_5cm": 0.39874880366021614
+        },
+        {
+          "capture": "1-2",
+          "direction": "center_to_sensor",
+          "fixed_roi_points": 26395,
+          "nn_rmse_clipped_10cm_m": 0.056992965735123274,
+          "plane_rmse_clipped_10cm_m": 0.04503919520167848,
+          "plane_median_m": 0.026199908157093842,
+          "nn_median_m": 0.036384395532129334,
+          "within_2cm": 0.22818715665845804,
+          "within_5cm": 0.6200037885963251,
+          "within_10cm": 0.8302708846372419,
+          "all_points_within_5cm": 0.4486631386776974
+        },
+        {
+          "capture": "1-3",
+          "direction": "sensor_to_center",
+          "fixed_roi_points": 19537,
+          "nn_rmse_clipped_10cm_m": 0.04704275243386329,
+          "plane_rmse_clipped_10cm_m": 0.035546732303949814,
+          "plane_median_m": 0.02297694966463002,
+          "nn_median_m": 0.02999823649732933,
+          "within_2cm": 0.2557199160567129,
+          "within_5cm": 0.7683370015867329,
+          "within_10cm": 0.9105287403388442,
+          "all_points_within_5cm": 0.40650140318054256
+        },
+        {
+          "capture": "1-3",
+          "direction": "center_to_sensor",
+          "fixed_roi_points": 26771,
+          "nn_rmse_clipped_10cm_m": 0.055592923932660965,
+          "plane_rmse_clipped_10cm_m": 0.04568663215621925,
+          "plane_median_m": 0.030213458364393195,
+          "nn_median_m": 0.03837806555653637,
+          "within_2cm": 0.17156624705838408,
+          "within_5cm": 0.6609764297187255,
+          "within_10cm": 0.8452429868140898,
+          "all_points_within_5cm": 0.4752216885276187
+        }
+      ]
+    },
+    "right": {
+      "score_nn_rmse_clipped_10cm_m_initial": 0.04808784086679541,
+      "score_nn_rmse_clipped_10cm_m_refined": 0.06613345596851467,
+      "initial_by_direction": [
+        {
+          "capture": "1-1",
+          "direction": "sensor_to_center",
+          "fixed_roi_points": 21159,
+          "nn_rmse_clipped_10cm_m": 0.04490265618319103,
+          "plane_rmse_clipped_10cm_m": 0.032324710428861494,
+          "plane_median_m": 0.012674139947276081,
+          "nn_median_m": 0.022460024959474956,
+          "within_2cm": 0.4365990831324732,
+          "within_5cm": 0.7886951179167258,
+          "within_10cm": 0.8960725932227421,
+          "all_points_within_5cm": 0.43315473220677236
+        },
+        {
+          "capture": "1-1",
+          "direction": "center_to_sensor",
+          "fixed_roi_points": 28306,
+          "nn_rmse_clipped_10cm_m": 0.047167945511018355,
+          "plane_rmse_clipped_10cm_m": 0.0334486340404783,
+          "plane_median_m": 0.013776979509993618,
+          "nn_median_m": 0.026456516635271144,
+          "within_2cm": 0.3564615275913234,
+          "within_5cm": 0.7613933441673143,
+          "within_10cm": 0.8946513106761818,
+          "all_points_within_5cm": 0.6104750869061414
+        },
+        {
+          "capture": "1-2",
+          "direction": "sensor_to_center",
+          "fixed_roi_points": 20393,
+          "nn_rmse_clipped_10cm_m": 0.04865817356486656,
+          "plane_rmse_clipped_10cm_m": 0.036150546969794715,
+          "plane_median_m": 0.014668908623027152,
+          "nn_median_m": 0.025052647731492565,
+          "within_2cm": 0.3716471338204286,
+          "within_5cm": 0.7483450203501202,
+          "within_10cm": 0.8712303241308292,
+          "all_points_within_5cm": 0.41419704519625844
+        },
+        {
+          "capture": "1-2",
+          "direction": "center_to_sensor",
+          "fixed_roi_points": 28745,
+          "nn_rmse_clipped_10cm_m": 0.04992370203284604,
+          "plane_rmse_clipped_10cm_m": 0.03755438181627821,
+          "plane_median_m": 0.015587634888273002,
+          "nn_median_m": 0.029093493317241648,
+          "within_2cm": 0.2926769873021395,
+          "within_5cm": 0.7350495738389285,
+          "within_10cm": 0.8750739259001565,
+          "all_points_within_5cm": 0.6095024611189426
+        },
+        {
+          "capture": "1-3",
+          "direction": "sensor_to_center",
+          "fixed_roi_points": 20073,
+          "nn_rmse_clipped_10cm_m": 0.048734724339449205,
+          "plane_rmse_clipped_10cm_m": 0.03570884548234891,
+          "plane_median_m": 0.013783280855568455,
+          "nn_median_m": 0.024799240368293875,
+          "within_2cm": 0.38384895132765406,
+          "within_5cm": 0.7457779106262143,
+          "within_10cm": 0.8696258655905943,
+          "all_points_within_5cm": 0.40554520547945205
+        },
+        {
+          "capture": "1-3",
+          "direction": "center_to_sensor",
+          "fixed_roi_points": 29479,
+          "nn_rmse_clipped_10cm_m": 0.049139843569401306,
+          "plane_rmse_clipped_10cm_m": 0.03793149239934708,
+          "plane_median_m": 0.015312655237753296,
+          "nn_median_m": 0.028259167862495917,
+          "within_2cm": 0.3094406187455477,
+          "within_5cm": 0.7440890125173852,
+          "within_10cm": 0.8792021438990468,
+          "all_points_within_5cm": 0.6224829115093294
+        }
+      ],
+      "refined_by_direction": [
+        {
+          "capture": "1-1",
+          "direction": "sensor_to_center",
+          "fixed_roi_points": 21159,
+          "nn_rmse_clipped_10cm_m": 0.06389893230021038,
+          "plane_rmse_clipped_10cm_m": 0.05018532446558996,
+          "plane_median_m": 0.020786079833678996,
+          "nn_median_m": 0.03688834840716392,
+          "within_2cm": 0.2830001417836382,
+          "within_5cm": 0.5648187532492084,
+          "within_10cm": 0.7013563968051421,
+          "all_points_within_5cm": 0.3059502375322675
+        },
+        {
+          "capture": "1-1",
+          "direction": "center_to_sensor",
+          "fixed_roi_points": 28306,
+          "nn_rmse_clipped_10cm_m": 0.06563680847976837,
+          "plane_rmse_clipped_10cm_m": 0.052743142240321395,
+          "plane_median_m": 0.025336628146587412,
+          "nn_median_m": 0.04302443705846319,
+          "within_2cm": 0.21882286441037235,
+          "within_5cm": 0.5373419063096163,
+          "within_10cm": 0.6946937045149438,
+          "all_points_within_5cm": 0.41049826187717264
+        },
+        {
+          "capture": "1-2",
+          "direction": "sensor_to_center",
+          "fixed_roi_points": 20393,
+          "nn_rmse_clipped_10cm_m": 0.06614224849992205,
+          "plane_rmse_clipped_10cm_m": 0.05220846197875299,
+          "plane_median_m": 0.023483238097109622,
+          "nn_median_m": 0.04547308976025515,
+          "within_2cm": 0.2491050850782131,
+          "within_5cm": 0.5221889864169078,
+          "within_10cm": 0.6854312754376501,
+          "all_points_within_5cm": 0.2781274586939418
+        },
+        {
+          "capture": "1-2",
+          "direction": "center_to_sensor",
+          "fixed_roi_points": 28745,
+          "nn_rmse_clipped_10cm_m": 0.0674001151349707,
+          "plane_rmse_clipped_10cm_m": 0.056361532083260224,
+          "plane_median_m": 0.02735588834472886,
+          "nn_median_m": 0.04847118272909805,
+          "within_2cm": 0.19599930422682205,
+          "within_5cm": 0.5073925900156548,
+          "within_10cm": 0.6763958949382501,
+          "all_points_within_5cm": 0.3997411781018187
+        },
+        {
+          "capture": "1-3",
+          "direction": "sensor_to_center",
+          "fixed_roi_points": 20073,
+          "nn_rmse_clipped_10cm_m": 0.06714476852575132,
+          "plane_rmse_clipped_10cm_m": 0.05270876844070971,
+          "plane_median_m": 0.023865421911807218,
+          "nn_median_m": 0.04610779793832075,
+          "within_2cm": 0.2420664574303791,
+          "within_5cm": 0.5157674488118368,
+          "within_10cm": 0.6673641209585015,
+          "all_points_within_5cm": 0.28061369863013697
+        },
+        {
+          "capture": "1-3",
+          "direction": "center_to_sensor",
+          "fixed_roi_points": 29479,
+          "nn_rmse_clipped_10cm_m": 0.06657786287046519,
+          "plane_rmse_clipped_10cm_m": 0.055505632851531234,
+          "plane_median_m": 0.02553146630898789,
+          "nn_median_m": 0.04352228819487438,
+          "within_2cm": 0.1971233759625496,
+          "within_5cm": 0.5282065198955188,
+          "within_10cm": 0.6805522575392653,
+          "all_points_within_5cm": 0.4378579346018844
+        }
+      ]
+    }
+  }
+}

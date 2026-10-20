@@ -1,0 +1,25 @@
+  left/gicp_lm_full voxel=0, gate=0.06
+    000: step 0.1964 mm, 0.003681 deg, pairs 41664
+RESULT left gicp_lm_full 0.050183804535272436 {'translation_difference_m': 0.00012463348265638212, 'rotation_difference_deg': 0.0043205139337325425}
+  left/gicp_lm_8cm voxel=0, gate=0.08
+    000: step 0.8118 mm, 0.015737 deg, pairs 44327
+RESULT left gicp_lm_8cm 0.050118815983484916 {'translation_difference_m': 0.0023177944067313554, 'rotation_difference_deg': 0.013543902748489753}
+  left/gicp_lm_trim voxel=0, gate=0.06
+    000: step 1.2062 mm, 0.027518 deg, pairs 39580
+RESULT left gicp_lm_trim 0.050122915319826315 {'translation_difference_m': 0.004550371174581165, 'rotation_difference_deg': 0.049563285335061616}
+  right/gicp_lm_full voxel=0, gate=0.06
+    000: step 0.3572 mm, 0.004294 deg, pairs 40516
+    025: step 0.0249 mm, 0.000160 deg, pairs 40524
+    050: step 0.0099 mm, 0.000341 deg, pairs 40523
+    075: step 0.0119 mm, 0.000264 deg, pairs 40523
+    100: step 0.0064 mm, 0.000080 deg, pairs 40524
+    125: step 0.0289 mm, 0.000078 deg, pairs 40523
+RESULT right gicp_lm_full 0.0568131420536815 {'translation_difference_m': 0.0007874105713265048, 'rotation_difference_deg': 0.008041063551761162}
+  right/gicp_lm_8cm voxel=0, gate=0.08
+    000: step 2.0691 mm, 0.015164 deg, pairs 43230
+RESULT right gicp_lm_8cm 0.056785445753874134 {'translation_difference_m': 0.0023337168294584125, 'rotation_difference_deg': 0.024088745937923865}
+  right/gicp_lm_trim voxel=0, gate=0.06
+    000: step 4.8245 mm, 0.099619 deg, pairs 38489
+    025: step 0.1505 mm, 0.001451 deg, pairs 38300
+    050: step 0.0103 mm, 0.000276 deg, pairs 38249
+RESULT right gicp_lm_trim 0.05798125525872434 {'translation_difference_m': 0.03067474355838296, 'rotation_difference_deg': 0.4466252997894105}

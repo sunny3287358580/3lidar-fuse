@@ -14,3 +14,7 @@ target_link_libraries(lidar_calibration ${PCL_LIBRARIES})
 
 add_executable(merge_clouds merge_clouds.cpp)
 target_link_libraries(merge_clouds ${PCL_LIBRARIES})
+
+add_executable(refine_gicp refine_gicp.cpp)
+target_compile_options(refine_gicp PRIVATE -O3)
+target_link_libraries(refine_gicp ${PCL_LIBRARIES})

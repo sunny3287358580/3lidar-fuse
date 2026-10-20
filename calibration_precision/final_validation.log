@@ -1,0 +1,32 @@
+  left/full_validation_2-1 voxel=0, gate=0.08
+    000: step 1.0150 mm, 0.025050 deg, pairs 22186
+    025: step 0.0781 mm, 0.000915 deg, pairs 22196
+    050: step 0.0379 mm, 0.000773 deg, pairs 22195
+    075: step 0.0272 mm, 0.000425 deg, pairs 22196
+    100: step 0.0559 mm, 0.001265 deg, pairs 22196
+    125: step 0.0781 mm, 0.000915 deg, pairs 22196
+    150: step 0.0379 mm, 0.000773 deg, pairs 22195
+    175: step 0.0272 mm, 0.000425 deg, pairs 22196
+  left/full_validation_2-2 voxel=0, gate=0.08
+    000: step 0.9588 mm, 0.023043 deg, pairs 22167
+SELECTED left gicp_lm_8cm initial score 0.0565917242625366 final score 0.05011881598342483 validation {'translation_difference_m': 0.003948730415192921, 'rotation_difference_deg': 0.0753113976300575}
+  right/full_validation_2-1 voxel=0, gate=0.08
+    000: step 1.7494 mm, 0.025248 deg, pairs 21643
+    025: step 0.0132 mm, 0.000215 deg, pairs 21638
+    050: step 0.0132 mm, 0.000215 deg, pairs 21638
+    075: step 0.0132 mm, 0.000215 deg, pairs 21638
+    100: step 0.0132 mm, 0.000215 deg, pairs 21638
+    125: step 0.0132 mm, 0.000215 deg, pairs 21638
+    150: step 0.0132 mm, 0.000215 deg, pairs 21638
+    175: step 0.0132 mm, 0.000215 deg, pairs 21638
+  right/full_validation_2-2 voxel=0, gate=0.08
+    000: step 1.6727 mm, 0.026330 deg, pairs 21582
+    025: step 0.0109 mm, 0.000139 deg, pairs 21596
+    050: step 0.0189 mm, 0.000192 deg, pairs 21597
+    075: step 0.0314 mm, 0.000099 deg, pairs 21597
+    100: step 0.0424 mm, 0.000404 deg, pairs 21596
+    125: step 0.0109 mm, 0.000139 deg, pairs 21596
+    150: step 0.0189 mm, 0.000192 deg, pairs 21597
+    175: step 0.0314 mm, 0.000099 deg, pairs 21597
+SELECTED right gicp_lm_8cm initial score 0.060044069178011056 final score 0.05678544575381274 validation {'translation_difference_m': 0.005641903418402688, 'rotation_difference_deg': 0.06001618805213422}
+FINAL COMPLETE

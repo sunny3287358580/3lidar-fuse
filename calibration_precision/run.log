@@ -1,0 +1,243 @@
+
+=== LEFT -> CENTER ===
+  left/pcl_mean voxel=0.04, gate=0.18
+    000: step 5.1792 mm, 0.132765 deg, pairs 16852
+    025: step 0.0080 mm, 0.000143 deg, pairs 16967
+    050: step 0.0055 mm, 0.000134 deg, pairs 16966
+    075: step 0.0055 mm, 0.000134 deg, pairs 16967
+    100: step 0.0055 mm, 0.000134 deg, pairs 16966
+    125: step 0.0055 mm, 0.000134 deg, pairs 16967
+    150: step 0.0055 mm, 0.000134 deg, pairs 16966
+    175: step 0.0055 mm, 0.000134 deg, pairs 16967
+  left/pcl_mean voxel=0.02, gate=0.12
+    000: step 3.6391 mm, 0.066207 deg, pairs 30241
+    025: step 0.0175 mm, 0.000266 deg, pairs 30149
+  left/pcl_mean voxel=0.01, gate=0.08
+    000: step 0.9354 mm, 0.020616 deg, pairs 31342
+    025: step 0.0070 mm, 0.000151 deg, pairs 31233
+    050: step 0.0216 mm, 0.000336 deg, pairs 31233
+    075: step 0.0133 mm, 0.000194 deg, pairs 31234
+    100: step 0.0090 mm, 0.000154 deg, pairs 31234
+    125: step 0.0216 mm, 0.000336 deg, pairs 31233
+    150: step 0.0133 mm, 0.000194 deg, pairs 31234
+    175: step 0.0090 mm, 0.000154 deg, pairs 31234
+  left/pcl_mean voxel=0, gate=0.06
+    000: step 0.2179 mm, 0.003861 deg, pairs 30087
+    025: step 0.0132 mm, 0.000409 deg, pairs 30073
+    050: step 0.0074 mm, 0.000085 deg, pairs 30067
+  pcl_mean: eval_score=50.188 mm
+  left/initial voxel=0.04, gate=0.18
+    000: step 26.0222 mm, 0.556399 deg, pairs 16017
+    025: step 0.0150 mm, 0.000184 deg, pairs 16967
+    050: step 0.0055 mm, 0.000134 deg, pairs 16966
+    075: step 0.0055 mm, 0.000134 deg, pairs 16967
+    100: step 0.0055 mm, 0.000134 deg, pairs 16966
+    125: step 0.0055 mm, 0.000134 deg, pairs 16967
+    150: step 0.0055 mm, 0.000134 deg, pairs 16966
+    175: step 0.0055 mm, 0.000134 deg, pairs 16967
+  left/initial voxel=0.02, gate=0.12
+    000: step 3.6391 mm, 0.066210 deg, pairs 30241
+    025: step 0.0175 mm, 0.000266 deg, pairs 30149
+  left/initial voxel=0.01, gate=0.08
+    000: step 0.9352 mm, 0.020625 deg, pairs 31342
+    025: step 0.0070 mm, 0.000150 deg, pairs 31233
+    050: step 0.0216 mm, 0.000336 deg, pairs 31233
+    075: step 0.0133 mm, 0.000194 deg, pairs 31234
+    100: step 0.0090 mm, 0.000154 deg, pairs 31234
+    125: step 0.0216 mm, 0.000336 deg, pairs 31233
+    150: step 0.0133 mm, 0.000194 deg, pairs 31234
+    175: step 0.0090 mm, 0.000154 deg, pairs 31234
+  left/initial voxel=0, gate=0.06
+    000: step 0.2179 mm, 0.003861 deg, pairs 30087
+    025: step 0.0132 mm, 0.000409 deg, pairs 30073
+    050: step 0.0074 mm, 0.000085 deg, pairs 30067
+  initial: eval_score=50.188 mm
+  left/plane_basin voxel=0.04, gate=0.18
+    000: step 3.8683 mm, 0.080789 deg, pairs 16938
+    025: step 0.0052 mm, 0.000139 deg, pairs 16966
+    050: step 0.0055 mm, 0.000134 deg, pairs 16967
+    075: step 0.0055 mm, 0.000134 deg, pairs 16966
+    100: step 0.0055 mm, 0.000134 deg, pairs 16967
+    125: step 0.0055 mm, 0.000134 deg, pairs 16966
+    150: step 0.0055 mm, 0.000134 deg, pairs 16967
+    175: step 0.0055 mm, 0.000134 deg, pairs 16966
+  left/plane_basin voxel=0.02, gate=0.12
+    000: step 3.6390 mm, 0.066233 deg, pairs 30241
+    025: step 0.0199 mm, 0.000299 deg, pairs 30149
+  left/plane_basin voxel=0.01, gate=0.08
+    000: step 0.9351 mm, 0.020614 deg, pairs 31342
+    025: step 0.0070 mm, 0.000150 deg, pairs 31233
+    050: step 0.0216 mm, 0.000336 deg, pairs 31233
+    075: step 0.0133 mm, 0.000194 deg, pairs 31234
+    100: step 0.0090 mm, 0.000154 deg, pairs 31234
+    125: step 0.0216 mm, 0.000336 deg, pairs 31233
+    150: step 0.0133 mm, 0.000194 deg, pairs 31234
+    175: step 0.0090 mm, 0.000154 deg, pairs 31234
+  left/plane_basin voxel=0, gate=0.06
+    000: step 0.2179 mm, 0.003861 deg, pairs 30087
+    025: step 0.0132 mm, 0.000409 deg, pairs 30073
+    050: step 0.0074 mm, 0.000085 deg, pairs 30067
+  plane_basin: eval_score=50.188 mm
+  left/validation_2-1 voxel=0.04, gate=0.18
+    000: step 4.8880 mm, 0.137696 deg, pairs 8367
+    025: step 0.0176 mm, 0.000276 deg, pairs 8426
+  left/validation_2-1 voxel=0.02, gate=0.12
+    000: step 3.8692 mm, 0.064594 deg, pairs 15095
+    025: step 0.0435 mm, 0.000142 deg, pairs 15043
+    050: step 0.0053 mm, 0.000068 deg, pairs 15043
+    075: step 0.0150 mm, 0.000125 deg, pairs 15043
+    100: step 0.0074 mm, 0.000080 deg, pairs 15043
+    125: step 0.0097 mm, 0.000161 deg, pairs 15043
+    150: step 0.0167 mm, 0.000157 deg, pairs 15043
+    175: step 0.0083 mm, 0.000147 deg, pairs 15042
+  left/validation_2-1 voxel=0.01, gate=0.08
+    000: step 0.9520 mm, 0.020773 deg, pairs 15664
+    025: step 0.0234 mm, 0.000421 deg, pairs 15592
+  left/validation_2-1 voxel=0, gate=0.06
+    000: step 0.2056 mm, 0.005364 deg, pairs 15030
+  left/validation_2-2 voxel=0.04, gate=0.18
+    000: step 5.4787 mm, 0.119916 deg, pairs 8497
+    025: step 0.0151 mm, 0.000427 deg, pairs 8543
+    050: step 0.0117 mm, 0.000352 deg, pairs 8543
+    075: step 0.0070 mm, 0.000165 deg, pairs 8544
+    100: step 0.0155 mm, 0.000252 deg, pairs 8544
+    125: step 0.0224 mm, 0.000688 deg, pairs 8544
+    150: step 0.0117 mm, 0.000352 deg, pairs 8543
+    175: step 0.0070 mm, 0.000165 deg, pairs 8544
+  left/validation_2-2 voxel=0.02, gate=0.12
+    000: step 3.5219 mm, 0.069324 deg, pairs 15152
+    025: step 0.0636 mm, 0.000786 deg, pairs 15106
+  left/validation_2-2 voxel=0.01, gate=0.08
+    000: step 1.0608 mm, 0.016491 deg, pairs 15675
+    025: step 0.0948 mm, 0.001784 deg, pairs 15638
+    050: step 0.0035 mm, 0.000044 deg, pairs 15631
+  left/validation_2-2 voxel=0, gate=0.06
+    000: step 0.2673 mm, 0.004291 deg, pairs 15053
+    025: step 0.0439 mm, 0.000549 deg, pairs 15041
+SELECTED left: pcl_2-1, score 50.155mm
+[[ 0.56488384 -0.5136691  -0.64579431  2.62206721]
+ [ 0.65152854  0.7579084  -0.03294576  0.16492499]
+ [ 0.50637615 -0.4021429   0.76280029 -0.07670377]
+ [ 0.          0.          0.          1.        ]]
+
+=== RIGHT -> CENTER ===
+  right/pcl_mean voxel=0.04, gate=0.18
+    000: step 7.9527 mm, 0.152893 deg, pairs 18667
+    025: step 0.1163 mm, 0.001236 deg, pairs 18477
+  right/pcl_mean voxel=0.02, gate=0.12
+    000: step 5.7239 mm, 0.079597 deg, pairs 30817
+    025: step 0.3062 mm, 0.000933 deg, pairs 31211
+    050: step 0.1926 mm, 0.004068 deg, pairs 31297
+  right/pcl_mean voxel=0.01, gate=0.08
+    000: step 0.7468 mm, 0.017404 deg, pairs 31498
+    025: step 0.0367 mm, 0.000359 deg, pairs 31476
+  right/pcl_mean voxel=0, gate=0.06
+    000: step 0.4133 mm, 0.003891 deg, pairs 29765
+    025: step 0.0082 mm, 0.000207 deg, pairs 29671
+    050: step 0.2943 mm, 0.001802 deg, pairs 29612
+    075: step 0.1714 mm, 0.001470 deg, pairs 29495
+    100: step 0.1165 mm, 0.000784 deg, pairs 29443
+  pcl_mean: eval_score=58.713 mm
+  right/initial voxel=0.04, gate=0.18
+    000: step 16.0956 mm, 0.436586 deg, pairs 17166
+    025: step 3.0872 mm, 0.088091 deg, pairs 18187
+    050: step 6.5186 mm, 0.146544 deg, pairs 18201
+    075: step 5.2837 mm, 0.064461 deg, pairs 18280
+    100: step 2.5789 mm, 0.035825 deg, pairs 18528
+    125: step 0.8430 mm, 0.012937 deg, pairs 18599
+    150: step 0.2133 mm, 0.010770 deg, pairs 18590
+    175: step 0.4774 mm, 0.005623 deg, pairs 18626
+  right/initial voxel=0.02, gate=0.12
+    000: step 4.3355 mm, 0.064233 deg, pairs 30162
+    025: step 2.9609 mm, 0.020328 deg, pairs 30083
+    050: step 4.1934 mm, 0.011707 deg, pairs 29937
+    075: step 5.2101 mm, 0.017302 deg, pairs 30040
+    100: step 5.9145 mm, 0.057461 deg, pairs 30633
+    125: step 0.7426 mm, 0.002198 deg, pairs 30784
+    150: step 0.2900 mm, 0.011122 deg, pairs 30805
+    175: step 0.3761 mm, 0.011340 deg, pairs 30810
+  right/initial voxel=0.01, gate=0.08
+    000: step 0.2894 mm, 0.007116 deg, pairs 31253
+    025: step 0.2650 mm, 0.003144 deg, pairs 31278
+    050: step 0.0180 mm, 0.002986 deg, pairs 31289
+    075: step 0.0310 mm, 0.001451 deg, pairs 31290
+    100: step 0.0620 mm, 0.002193 deg, pairs 31304
+    125: step 0.0047 mm, 0.000103 deg, pairs 31288
+  right/initial voxel=0, gate=0.06
+    000: step 0.6904 mm, 0.001759 deg, pairs 29936
+    025: step 0.2848 mm, 0.009993 deg, pairs 29907
+    050: step 0.2492 mm, 0.007894 deg, pairs 29926
+    075: step 0.0112 mm, 0.003000 deg, pairs 29899
+    100: step 0.2126 mm, 0.007137 deg, pairs 29912
+    125: step 0.2314 mm, 0.005775 deg, pairs 29884
+    150: step 0.0600 mm, 0.001979 deg, pairs 29889
+  initial: eval_score=63.263 mm
+  right/plane_basin voxel=0.04, gate=0.18
+    000: step 3.9478 mm, 0.126754 deg, pairs 17598
+    025: step 4.3114 mm, 0.061038 deg, pairs 18034
+    050: step 6.3079 mm, 0.076345 deg, pairs 18284
+    075: step 2.7427 mm, 0.032744 deg, pairs 18473
+    100: step 2.1140 mm, 0.022193 deg, pairs 18488
+    125: step 1.7075 mm, 0.001106 deg, pairs 18533
+    150: step 0.3686 mm, 0.005773 deg, pairs 18540
+    175: step 0.1140 mm, 0.000741 deg, pairs 18511
+  right/plane_basin voxel=0.02, gate=0.12
+    000: step 4.4599 mm, 0.045809 deg, pairs 30870
+    025: step 0.2472 mm, 0.007582 deg, pairs 30803
+    050: step 0.2110 mm, 0.008014 deg, pairs 30809
+    075: step 0.2380 mm, 0.009933 deg, pairs 30821
+    100: step 0.3180 mm, 0.009960 deg, pairs 30826
+    125: step 0.3327 mm, 0.008345 deg, pairs 30848
+    150: step 0.1698 mm, 0.006868 deg, pairs 30850
+    175: step 0.0409 mm, 0.001469 deg, pairs 30849
+  right/plane_basin voxel=0.01, gate=0.08
+    000: step 0.8761 mm, 0.011806 deg, pairs 31307
+    025: step 0.0836 mm, 0.000843 deg, pairs 31293
+    050: step 0.0446 mm, 0.000561 deg, pairs 31287
+    075: step 0.0105 mm, 0.000198 deg, pairs 31301
+  right/plane_basin voxel=0, gate=0.06
+    000: step 0.6326 mm, 0.002503 deg, pairs 29937
+    025: step 0.2758 mm, 0.012118 deg, pairs 29904
+    050: step 0.3189 mm, 0.005002 deg, pairs 29888
+    075: step 0.0375 mm, 0.000412 deg, pairs 29882
+  plane_basin: eval_score=63.263 mm
+  right/validation_2-1 voxel=0.04, gate=0.18
+    000: step 6.9651 mm, 0.150752 deg, pairs 9333
+    025: step 0.0331 mm, 0.000799 deg, pairs 9224
+  right/validation_2-1 voxel=0.02, gate=0.12
+    000: step 5.7253 mm, 0.076477 deg, pairs 15274
+    025: step 0.9470 mm, 0.009514 deg, pairs 15401
+    050: step 0.5637 mm, 0.005825 deg, pairs 15511
+    075: step 0.0208 mm, 0.000137 deg, pairs 15558
+  right/validation_2-1 voxel=0.01, gate=0.08
+    000: step 0.8278 mm, 0.014848 deg, pairs 15740
+    025: step 0.1517 mm, 0.000560 deg, pairs 15749
+    050: step 0.0060 mm, 0.000086 deg, pairs 15761
+  right/validation_2-1 voxel=0, gate=0.06
+    000: step 0.3939 mm, 0.006490 deg, pairs 14804
+    025: step 0.5953 mm, 0.001815 deg, pairs 14787
+    050: step 0.0622 mm, 0.001315 deg, pairs 14728
+    075: step 0.0089 mm, 0.000250 deg, pairs 14738
+    100: step 0.0097 mm, 0.000219 deg, pairs 14738
+    125: step 0.0079 mm, 0.000141 deg, pairs 14738
+    150: step 0.0115 mm, 0.000250 deg, pairs 14737
+    175: step 0.0023 mm, 0.000052 deg, pairs 14737
+  right/validation_2-2 voxel=0.04, gate=0.18
+    000: step 7.4973 mm, 0.140254 deg, pairs 9336
+    025: step 0.1462 mm, 0.002516 deg, pairs 9253
+  right/validation_2-2 voxel=0.02, gate=0.12
+    000: step 5.7155 mm, 0.083933 deg, pairs 15550
+    025: step 0.1162 mm, 0.000509 deg, pairs 15739
+  right/validation_2-2 voxel=0.01, gate=0.08
+    000: step 0.6650 mm, 0.015029 deg, pairs 15805
+    025: step 0.0217 mm, 0.000113 deg, pairs 15804
+  right/validation_2-2 voxel=0, gate=0.06
+    000: step 0.3519 mm, 0.004143 deg, pairs 14980
+    025: step 0.2438 mm, 0.001300 deg, pairs 14919
+    050: step 0.1604 mm, 0.000382 deg, pairs 14879
+SELECTED right: pcl_2-2, score 56.762mm
+[[ 0.62690043  0.43931882  0.6434243  -2.62657714]
+ [-0.55708874  0.8301061  -0.02399982  0.04706517]
+ [-0.54465401 -0.34339893  0.76513344 -0.34542829]
+ [ 0.          0.          0.          1.        ]]
+COMPLETE 1406.6s: /home/sunny/sunny/calibration_precision

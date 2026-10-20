@@ -1,0 +1,21 @@
+
+=== LEFT -> CENTER ===
+  pcl_mean: eval_score=50.188 mm
+  initial: eval_score=50.188 mm
+  plane_basin: eval_score=50.188 mm
+SELECTED left: gicp_lm_8cm, score 50.119mm
+[[ 0.56472189 -0.51370963 -0.64590371  2.62473674]
+ [ 0.6516702   0.75778724 -0.03293088  0.16553494]
+ [ 0.50637451 -0.40231941  0.7627083  -0.0756661 ]
+ [ 0.          0.          0.          1.        ]]
+
+=== RIGHT -> CENTER ===
+  pcl_mean: eval_score=58.713 mm
+  initial: eval_score=63.263 mm
+  plane_basin: eval_score=63.263 mm
+SELECTED right: gicp_lm_8cm, score 56.785mm
+[[ 0.62711427  0.43904951  0.64339974 -2.62318369]
+ [-0.55712052  0.83010095 -0.02343363  0.04558819]
+ [-0.54437526 -0.34375563  0.76517164 -0.3430243 ]
+ [ 0.          0.          0.          1.        ]]
+COMPLETE 16.6s: /home/sunny/sunny/calibration_precision
